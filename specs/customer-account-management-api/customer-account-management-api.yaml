@@ -3,7 +3,7 @@ openapi: 3.1.0
 info:
   title: Customer Account Management API
   version: 1.0.0
-  description: Manage customer accounts.
+  description: Manage customer accounts and balances.
 
 servers:
   - url: https://api.example.com/v1
