@@ -1,0 +1,17 @@
+{
+  "catalogue_version": "1.0",
+  "apis": {
+    "customer-account-management-api": {
+      "display_name": "Customer Account Management API",
+      "domain": "Customer Account Management",
+      "owner": "Customer Accounts API Team",
+      "specification": "specs/customer-account-management-api/customer-account-management-api.yaml",
+      "lifecycle": "Published",
+      "approval_status": "Pending",
+      "approved_by": "API Governance Team",
+      "approval_reference": "DEMO-APPROVAL-001",
+      "dependencies": [],
+      "postman_spec_id": "748b6d39-1400-42f4-b918-ba2099157562"
+    }
+  }
+}

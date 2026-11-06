@@ -1,0 +1,42 @@
+openapi: 3.1.0
+
+info:
+  title: Customer Account Management API
+  version: 1.0.0
+  description: Manage customer accounts.
+
+servers:
+  - url: https://api.example.com/v1
+
+security:
+  - bearerAuth: []
+
+paths:
+  /accounts/{accountId}:
+    get:
+      summary: Get account
+      operationId: get_account
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: accountId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Success
+        "401":
+          description: Missing or invalid authentication
+        "403":
+          description: Caller is not authorized
+        "404":
+          description: Not found
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT

@@ -1,0 +1,53 @@
+{
+  "catalogue_version": "1.0",
+  "apis": {
+    "customer-account-management-api": {
+      "display_name": "Customer Account Management API",
+      "domain": "Customer Account Management",
+      "owner": "Customer Accounts API Team",
+      "specification": "specs/customer-account-management-api/customer-account-management-api.yaml",
+      "lifecycle": "Published",
+      "approval_status": "Approved",
+      "approved_by": "API Governance Team",
+      "approval_reference": "DEMO-APPROVAL-001",
+      "dependencies": [],
+      "postman_spec_id": "748b6d39-1400-42f4-b918-ba2099157562"
+    },
+    "fund-transfer-api": {
+      "display_name": "Fund Transfer API",
+      "domain": "Fund Transfers",
+      "owner": "Fund Transfer API Team",
+      "specification": "specs/fund-transfer-api/fund-transfer-api.yaml",
+      "lifecycle": "Draft",
+      "approval_status": "Pending",
+      "approved_by": "",
+      "approval_reference": "",
+      "dependencies": [],
+      "postman_spec_id": "185df09a-d280-47d1-acf9-aad2cec4c919"
+    },
+    "payment-processing-api": {
+      "display_name": "Payment Processing API",
+      "domain": "Payment Processing",
+      "owner": "Payments API Team",
+      "specification": "specs/payment-processing-api/payment-processing-api.yaml",
+      "lifecycle": "Draft",
+      "approval_status": "Pending",
+      "approved_by": "",
+      "approval_reference": "",
+      "dependencies": [],
+      "postman_spec_id": "78d36972-8bbd-48a8-a033-e4644ef5c612"
+    },
+    "loan-management-api": {
+      "display_name": "Loan Management API",
+      "domain": "Loan Management",
+      "owner": "Lending API Team",
+      "specification": "specs/loan-management-api/loan-management-api.yaml",
+      "lifecycle": "Draft",
+      "approval_status": "Pending",
+      "approved_by": "",
+      "approval_reference": "",
+      "dependencies": [],
+      "postman_spec_id": "62675904-dc5f-48ff-ae70-98ef53232f21"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+openapi: 3.1.0
+
+info:
+  title: Fund Transfer API
+  version: 1.0.0
+  description: Initiate and track fund transfers.
+
+servers:
+  - url: https://api.example.com/v1
+
+security:
+  - bearerAuth: []
+
+paths:
+  /transfers/{transferId}:
+    get:
+      summary: Get transfer
+      operationId: get_transfer
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: transferId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Success
+        "401":
+          description: Missing or invalid authentication
+        "403":
+          description: Caller is not authorized
+        "404":
+          description: Not found
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT

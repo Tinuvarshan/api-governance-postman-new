@@ -1,0 +1,12 @@
+# Maps each folder under specs/ to its Postman Spec Hub specification ID.
+# Keep the exact indentation (2 spaces for the API name, 4 for spec_id):
+# scripts/detect-changed-apis.py parses this file line by line.
+apis:
+  customer-account-management-api:
+    spec_id: 748b6d39-1400-42f4-b918-ba2099157562
+  fund-transfer-api:
+    spec_id: 185df09a-d280-47d1-acf9-aad2cec4c919
+  payment-processing-api:
+    spec_id: 78d36972-8bbd-48a8-a033-e4644ef5c612
+  loan-management-api:
+    spec_id: 62675904-dc5f-48ff-ae70-98ef53232f21
