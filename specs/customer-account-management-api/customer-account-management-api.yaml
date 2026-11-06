@@ -34,6 +34,26 @@ paths:
         "404":
           description: Not found
 
+  /accounts/{accountId}/balance:
+    get:
+      summary: Get account balance
+      operationId: get_account_balance
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: accountId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Balance returned
+        "401":
+          description: Missing or invalid authentication
+        "404":
+          description: Account not found
+
 components:
   securitySchemes:
     bearerAuth:
