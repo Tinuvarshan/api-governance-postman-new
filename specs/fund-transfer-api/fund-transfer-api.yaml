@@ -34,6 +34,26 @@ paths:
         "404":
           description: Not found
 
+  /transfers/{transferId}/status:
+    get:
+      summary: Get transfer status
+      operationId: get_transfer_status
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: transferId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Status returned
+        "401":
+          description: Missing or invalid authentication
+        "404":
+          description: Transfer not found
+
 components:
   securitySchemes:
     bearerAuth:
