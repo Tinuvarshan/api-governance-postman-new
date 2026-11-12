@@ -42,10 +42,6 @@ paths:
           description: Account statement returned successfully
         "400":
           description: Invalid date range or request parameters
-        "401":
-          description: Missing or invalid authentication
-        "403":
-          description: Caller is not authorized
         "404":
           description: Account not found
 
