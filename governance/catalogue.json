@@ -60,6 +60,18 @@
       "approval_reference": "",
       "dependencies": [],
       "postman_spec_id": ""
+    },
+    "card-management-api": {
+      "display_name": "Card Management API",
+      "domain": "Card Services",
+      "owner": "Cards API Team",
+      "specification": "specs/card-management-api/card-management-api.yaml",
+      "lifecycle": "Draft",
+      "approval_status": "Pending",
+      "approved_by": "",
+      "approval_reference": "",
+      "dependencies": [],
+      "postman_spec_id": ""
     }
   }
 }
