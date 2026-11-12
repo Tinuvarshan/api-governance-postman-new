@@ -10,3 +10,5 @@ apis:
     spec_id: 78d36972-8bbd-48a8-a033-e4644ef5c612
   loan-management-api:
     spec_id: 62675904-dc5f-48ff-ae70-98ef53232f21
+  whatsapp-statement-api:
+    spec_id: 494e605c-120a-466f-86b2-99afa7a23ac5

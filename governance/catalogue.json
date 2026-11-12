@@ -48,6 +48,18 @@
       "approval_reference": "",
       "dependencies": [],
       "postman_spec_id": "62675904-dc5f-48ff-ae70-98ef53232f21"
+    },
+    "whatsapp-statement-api": {
+      "display_name": "Whatsapp Statement API",
+      "domain": "whatsapp-services",
+      "owner": "Whatsapp Banking API Team",
+      "specification": "specs/whatsapp-statement-api/whatsapp-statement-api.yaml",
+      "lifecycle": "Draft",
+      "approval_status": "Pending",
+      "approved_by": "",
+      "approval_reference": "",
+      "dependencies": [],
+      "postman_spec_id": ""
     }
   }
 }
