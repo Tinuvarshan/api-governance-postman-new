@@ -1,0 +1,39 @@
+openapi: 3.1.0
+
+info:
+  title: "Card Management API"
+  version: 1.0.0
+  description: "Card management for customers"
+
+servers:
+  - url: https://api.example.com/v1
+
+security:
+  - bearerAuth: []
+
+paths:
+  /cards/{cardId}:
+    get:
+      summary: Get card details
+      operationId: get_card
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: cardId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Card returned
+        "401":
+          description: Missing or invalid authentication
+        "404":
+          description: Card not found
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
