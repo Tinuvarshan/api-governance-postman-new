@@ -72,6 +72,18 @@
       "approval_reference": "",
       "dependencies": [],
       "postman_spec_id": ""
+    },
+    "insurance-policy-api": {
+      "display_name": "Insurance Policy API",
+      "domain": "Insurance Services",
+      "owner": "Insurance API Team",
+      "specification": "specs/insurance-policy-api/insurance-policy-api.yaml",
+      "lifecycle": "Draft",
+      "approval_status": "Pending",
+      "approved_by": "",
+      "approval_reference": "",
+      "dependencies": [],
+      "postman_spec_id": ""
     }
   }
 }

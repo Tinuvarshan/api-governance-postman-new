@@ -14,3 +14,5 @@ apis:
     spec_id: 494e605c-120a-466f-86b2-99afa7a23ac5
   card-management-api:
     spec_id: 582565a4-f158-48b5-86d7-5badd60f8f94
+  insurance-policy-api:
+    spec_id: 7aaa2be2-ab44-485d-86d6-15a6fe3e49a6
