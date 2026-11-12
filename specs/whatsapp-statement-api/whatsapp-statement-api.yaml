@@ -1,0 +1,39 @@
+openapi: 3.1.0
+
+info:
+  title: "Whatsapp Statement API"
+  version: 1.0.0
+  description: "Whatsapp banking for customers"
+
+servers:
+  - url: https://api.example.com/v1
+
+security:
+  - bearerAuth: []
+
+paths:
+  /whatsapp/accounts/{accountId}/statements:
+    get:
+      summary: Get WhatsApp account statement
+      operationId: get_whatsapp_statement
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: accountId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Statement returned
+        "401":
+          description: Missing or invalid authentication
+        "404":
+          description: Account not found
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
