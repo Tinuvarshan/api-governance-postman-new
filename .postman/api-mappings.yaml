@@ -10,3 +10,5 @@ apis:
     spec_id: 78d36972-8bbd-48a8-a033-e4644ef5c612
   loan-management-api:
     spec_id: 62675904-dc5f-48ff-ae70-98ef53232f21
+  account-statement-api:
+    spec_id: 913a9610-acba-4152-b000-d7be9b8880d1  

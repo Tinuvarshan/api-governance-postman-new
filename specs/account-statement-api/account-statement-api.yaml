@@ -1,0 +1,57 @@
+
+openapi: 3.1.0
+
+info:
+  title: "Account Statement API"
+  version: 1.0.0
+  description: "Account Statement for Customers."
+
+servers:
+  - url: https://api.example.com/v1
+
+security:
+  - bearerAuth: []
+
+paths:
+  /accounts/{accountId}/statement:
+    get:
+      summary: Get account statement
+      operationId: get_account_statement
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: accountId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: fromDate
+          in: query
+          required: false
+          schema:
+            type: string
+            format: date
+        - name: toDate
+          in: query
+          required: false
+          schema:
+            type: string
+            format: date
+      responses:
+        "200":
+          description: Account statement returned successfully
+        "400":
+          description: Invalid date range or request parameters
+        "401":
+          description: Missing or invalid authentication
+        "403":
+          description: Caller is not authorized
+        "404":
+          description: Account not found
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
