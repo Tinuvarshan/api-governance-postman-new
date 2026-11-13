@@ -18,3 +18,5 @@ apis:
     spec_id: 7aaa2be2-ab44-485d-86d6-15a6fe3e49a6
   savings-account-api:
     spec_id: df3d29b1-e44c-4c9e-b3a4-a3621b4b221b
+  mortgage-api:
+    spec_id: 2c240977-210b-4f12-bb85-2f4a78c5bc1f

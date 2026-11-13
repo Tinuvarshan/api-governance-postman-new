@@ -1,0 +1,39 @@
+openapi: 3.1.0
+
+info:
+  title: "Mortgage API"
+  version: 1.0.0
+  description: "Mortgage applications for customers"
+
+servers:
+  - url: https://api.example.com/v1
+
+security:
+  - bearerAuth: []
+
+paths:
+  /mortgages/{mortgageId}:
+    get:
+      summary: Get mortgage
+      operationId: get_mortgage
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: mortgageId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Mortgage returned
+        "401":
+          description: Missing or invalid authentication
+        "404":
+          description: Mortgage not found
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
