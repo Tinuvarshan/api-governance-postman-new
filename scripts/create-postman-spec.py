@@ -47,7 +47,7 @@ def main():
     req = Request(
         f"https://api.postman.com/specs?workspaceId={workspace}",
         data=body, method="POST",
-        headers={"X-Api-Key": key, "Content-Type": "application/json"},
+        headers={"X-Api-Key": key, "Content-Type": "application/json", "Accept": "application/json", "User-Agent": "api-governance-demo/1.0"},
     )
     try:
         with urlopen(req, timeout=30) as resp:
