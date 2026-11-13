@@ -11,7 +11,26 @@ servers:
 security:
   - bearerAuth: []
 
-paths: {}
+paths:
+  /savings/{accountId}:
+    get:
+      summary: Get savings account
+      operationId: get_savings_account
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: accountId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Savings account returned
+        "401":
+          description: Missing or invalid authentication
+        "404":
+          description: Account not found
 
 components:
   securitySchemes:
