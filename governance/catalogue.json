@@ -96,6 +96,18 @@
       "approval_reference": "",
       "dependencies": [],
       "postman_spec_id": "df3d29b1-e44c-4c9e-b3a4-a3621b4b221b"
+    },
+    "mortgage-api": {
+      "display_name": "Mortgage API",
+      "domain": "Mortgage Services",
+      "owner": "Mortgage API Team",
+      "specification": "specs/mortgage-api/mortgage-api.yaml",
+      "lifecycle": "Draft",
+      "approval_status": "Pending",
+      "approved_by": "",
+      "approval_reference": "",
+      "dependencies": [],
+      "postman_spec_id": "2c240977-210b-4f12-bb85-2f4a78c5bc1f"
     }
   }
 }
