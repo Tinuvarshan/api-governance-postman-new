@@ -108,6 +108,18 @@
       "approval_reference": "",
       "dependencies": [],
       "postman_spec_id": "2c240977-210b-4f12-bb85-2f4a78c5bc1f"
+    },
+    "banking1-api": {
+      "display_name": "Banking 1 API",
+      "domain": "Banking Services",
+      "owner": "Banking API Team",
+      "specification": "specs/banking1-api/banking1-api.yaml",
+      "lifecycle": "Draft",
+      "approval_status": "Pending",
+      "approved_by": "",
+      "approval_reference": "",
+      "dependencies": [],
+      "postman_spec_id": "943266d0-5a84-4bfb-ae3f-c6ee4724b17d"
     }
   }
 }

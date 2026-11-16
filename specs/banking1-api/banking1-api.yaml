@@ -1,0 +1,39 @@
+openapi: 3.1.0
+
+info:
+  title: "Banking 1 API"
+  version: 1.0.0
+  description: "Banking applications for customers"
+
+servers:
+  - url: https://api.example.com/v1
+
+security:
+  - bearerAuth: []
+
+paths:
+  /banking/{bankingId}:
+    get:
+      summary: Get banking
+      operationId: get_banking
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: bankingId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Mortgage returned
+        "401":
+          description: Missing or invalid authentication
+        "404":
+          description: Mortgage not found
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer

@@ -20,3 +20,5 @@ apis:
     spec_id: df3d29b1-e44c-4c9e-b3a4-a3621b4b221b
   mortgage-api:
     spec_id: 2c240977-210b-4f12-bb85-2f4a78c5bc1f
+  banking1-api:
+    spec_id: 943266d0-5a84-4bfb-ae3f-c6ee4724b17d
